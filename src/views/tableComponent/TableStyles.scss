@@ -1,22 +1,48 @@
-h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  position: relative;
-  top: -10px;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-.greetings h1,
-.greetings h3 {
-  text-align: center;
-}
-
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
+.greetings {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  .green {
+    color: green;
   }
+  h3 {
+    color: red;
+  }
+}
+input {
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  th,
+  td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+}
+.noData {
+  color: rgb(0, 170, 255);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
